@@ -19,3 +19,18 @@ for (let i = 0; i < 30 * 30; i++) {
   // Append the new square div to the container div
   container.appendChild(square);
 }
+
+// Get the clear grid button div using its ID
+const clearGridButton = document.getElementById('clear-grid-button');
+
+// Add a click event listener to the clear grid button div
+clearGridButton.addEventListener('click', function() {
+  // Get all the square divs inside the container div
+  const squares = container.querySelectorAll('.square');
+
+  // Loop through all the square divs and set their background color to white
+  squares.forEach(function(square) {
+    square.style.backgroundColor = 'white';
+  });
+});
+
