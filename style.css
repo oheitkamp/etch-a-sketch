@@ -1,0 +1,22 @@
+body {
+    min-height: 100vh; /* Set the minimum height of the body to 100% of the viewport height */
+    height: 100vh; /* Set the height of the body to 100% of the viewport height */
+    display: flex; /* Use flexbox to horizontally and vertically center the container div */
+    justify-content: center; /* Center the container div horizontally */
+    align-items: center; /* Center the container div vertically */
+    gap: 2%; /* Add a small gap between the square divs */
+}
+
+/* Sets the display property of the container div to grid and creates a 30x30 grid */
+#container {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    margin: 0;
+  }
+  
+  /* Defines the size and border of each square div */
+  .square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+  }
